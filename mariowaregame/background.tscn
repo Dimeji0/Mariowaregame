@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bt3icbade1i7r"]
+
+[ext_resource type="Texture2D" uid="uid://w8730jfve7id" path="res://Screenshot 2026-03-01 003942.png" id="1_oabld"]
+
+[node name="Background" type="TextureRect" unique_id=1351310216]
+anchors_preset = -1
+anchor_left = -0.043
+anchor_top = 0.28
+anchor_right = -0.043
+anchor_bottom = 0.28
+offset_left = 55.536003
+offset_top = -175.44
+offset_right = 588.536
+offset_bottom = 135.56
+scale = Vector2(2.1557608, 2.1023066)
+texture = ExtResource("1_oabld")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=1609826863]
+clip_contents = false
+layout_mode = 0
+offset_left = 10.205217
+offset_top = 33.296764
+offset_right = 50.205185
+offset_bottom = 73.29677
+rotation = 0.08908086
+scale = Vector2(12.921408, 6.994561)
+pivot_offset = Vector2(-2.0428836, 6.330955)
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 7
+text = "Warioware"
+
+[node name="Button" type="Button" parent="." unique_id=1124595806]
+layout_mode = 0
+offset_left = 219.87598
+offset_top = 125.100685
+offset_right = 312.87598
+offset_bottom = 156.1007
+text = "Start game"
+
+[node name="Button2" type="Button" parent="." unique_id=808798673]
+layout_mode = 0
+offset_left = 222.19534
+offset_top = 173.61884
+offset_right = 315.19534
+offset_bottom = 204.61884
+text = "Settings"
+
+[node name="Button3" type="Button" parent="." unique_id=992315519]
+layout_mode = 0
+offset_left = 219.87598
+offset_top = 223.56396
+offset_right = 312.87598
+offset_bottom = 254.56398
+theme_override_font_sizes/font_size = 16
+text = "Quit"
