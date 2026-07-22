@@ -3,6 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://w8730jfve7id" path="res://Screenshot 2026-03-01 003942.png" id="1_68ljo"]
 [ext_resource type="Script" uid="uid://ctbet4t5gppel" path="res://Scenes/title_scene.gd" id="1_b6ftn"]
 
+[sub_resource type="Theme" id="Theme_kkm83"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_og5nu"]
+atlas = ExtResource("1_68ljo")
+region = Rect2(16, 107.20001, 56.100006, 39.49999)
+
 [node name="Title_scene" type="Node2D" unique_id=479521929]
 script = ExtResource("1_b6ftn")
 
@@ -12,31 +18,46 @@ anchor_left = -0.043
 anchor_top = 0.28
 anchor_right = -0.043
 anchor_bottom = 0.28
-offset_left = 55.536003
-offset_top = -175.44
-offset_right = 588.536
-offset_bottom = 135.56
+offset_left = 6.0
+offset_top = -2.0
+offset_right = 539.0
+offset_bottom = 309.0
 scale = Vector2(2.1557608, 2.1023066)
 texture = ExtResource("1_68ljo")
+
+[node name="Cloned patch" type="TextureRect" parent="Background" unique_id=967895330]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.043
+anchor_top = 0.28
+anchor_right = -0.043
+anchor_bottom = 0.28
+offset_left = 28.949352
+offset_top = 147.42432
+offset_right = 561.94934
+offset_bottom = 458.42432
+scale = Vector2(0.12943889, 0.18734744)
+theme = SubResource("Theme_kkm83")
+texture = SubResource("AtlasTexture_og5nu")
 
 [node name="Title" type="RichTextLabel" parent="Background" unique_id=1609826863]
 clip_contents = false
 layout_mode = 0
-offset_left = 13.667561
-offset_top = 32.07905
-offset_right = 53.66753
-offset_bottom = 72.079056
+offset_left = 6.9581
+offset_top = 29.015749
+offset_right = 46.95807
+offset_bottom = 69.015755
 rotation = 0.08908086
 scale = Vector2(12.921408, 6.994561)
 pivot_offset = Vector2(-2.0428836, 6.330955)
 theme_override_constants/outline_size = 40
 theme_override_font_sizes/normal_font_size = 7
-text = "Warioware"
+text = "Mairoware"
 
 [node name="Start" type="Button" parent="Background" unique_id=1533082266]
 layout_mode = 0
 offset_left = 228.44092
-offset_top = 126.26132
+offset_top = 126.261314
 offset_right = 274.44092
 offset_bottom = 157.26132
 scale = Vector2(1.6544155, 1.2068914)
