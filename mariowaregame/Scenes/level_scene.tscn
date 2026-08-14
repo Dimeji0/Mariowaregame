@@ -1,3 +1,58 @@
 [gd_scene format=3 uid="uid://cxv684nfp2rc5"]
 
+[ext_resource type="Script" uid="uid://ceo103scchsmm" path="res://Scenes/timer_screen.gd" id="1_cn3xy"]
+[ext_resource type="Texture2D" uid="uid://bmm6swdsha01x" path="res://burgerhp(1).png" id="2_c7xwe"]
+
 [node name="Node2D" type="Node2D" unique_id=2010517788]
+script = ExtResource("1_cn3xy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1090169723]
+offset_right = 1149.0
+offset_bottom = 644.0
+color = Color(0.39215687, 1, 1, 1)
+
+[node name="meal box" type="HBoxContainer" parent="." unique_id=698137616]
+offset_left = 218.0
+offset_top = 36.0
+offset_right = 2829.0
+offset_bottom = 421.0
+scale = Vector2(0.25385132, 0.21264762)
+
+[node name="burger1" type="TextureRect" parent="meal box" unique_id=439439345]
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+
+[node name="burger2" type="TextureRect" parent="meal box" unique_id=520566379]
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+
+[node name="burger3" type="TextureRect" parent="meal box" unique_id=1240066905]
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+
+[node name="burger4" type="TextureRect" parent="meal box" unique_id=301082841]
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+
+[node name="burger5" type="TextureRect" parent="meal box" unique_id=2009358253]
+layout_mode = 2
+texture = ExtResource("2_c7xwe")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1707498797]
+modulate = Color(0.9843137, 1, 1, 1)
+offset_left = 432.00003
+offset_top = 162.00002
+offset_right = 472.00003
+offset_bottom = 202.00002
+scale = Vector2(8.70506, 8.70506)
+theme_override_font_sizes/normal_font_size = 8
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=894183868]
+offset_left = 484.0
+offset_top = 355.0
+offset_right = 548.92334
+offset_bottom = 419.9234
+scale = Vector2(1.7713194, 1.7713194)
+theme_override_font_sizes/normal_font_size = 32
+text = "0.0"
