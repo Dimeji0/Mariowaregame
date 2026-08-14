@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://dkf5fioxqlcy7"]
 
+[ext_resource type="Script" uid="uid://cet2325ww1ji1" path="res://Scenes/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://dghinovubs7f8" path="res://micheal rio.png" id="1_v0iea"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mn5rd"]
+radius = 9.713477
 
 [node name="Player" type="CharacterBody2D" unique_id=1575242632]
+script = ExtResource("1_cvnsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1673720119]
+position = Vector2(244, 102)
 texture = ExtResource("1_v0iea")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1483417584]
+position = Vector2(243, 102.00001)
+scale = Vector2(-5.4706044, 5.9999943)
 shape = SubResource("CircleShape2D_mn5rd")

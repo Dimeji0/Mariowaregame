@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dfdu03qdrwgy3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mn5rd"]
+size = Vector2(407.65726, 53)
+
+[node name="minigame_1" type="Node2D" unique_id=207607241]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=848638424]
+position = Vector2(-183, 500)
+scale = Vector2(2.8365207, 0.91571367)
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D" unique_id=523894254]
+offset_left = 65.573296
+offset_top = 91.73174
+offset_right = 105.573296
+offset_bottom = 131.73175
+scale = Vector2(10.321789, 1.4784259)
+color = Color(0.19644576, 0.3180778, 0.50333184, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1614610382]
+position = Vector2(265.17142, 121.50012)
+scale = Vector2(1.0000001, 1)
+shape = SubResource("RectangleShape2D_mn5rd")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=863579222]
+offset_right = 40.0
+offset_bottom = 40.0
