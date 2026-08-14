@@ -1,9 +1,18 @@
 [gd_scene format=3 uid="uid://dfdu03qdrwgy3"]
 
+[ext_resource type="Texture2D" uid="uid://0qgqr21ewkb0" path="res://meaty background.png" id="1_enoba"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mn5rd"]
 size = Vector2(407.65726, 53)
 
 [node name="minigame_1" type="Node2D" unique_id=207607241]
+
+[node name="scrolling background" type="Parallax2D" parent="." unique_id=936748529]
+
+[node name="background" type="TextureRect" parent="scrolling background" unique_id=863579222]
+offset_right = 1600.0
+offset_bottom = 900.0
+texture = ExtResource("1_enoba")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=848638424]
 position = Vector2(-183, 500)
@@ -21,7 +30,3 @@ color = Color(0.19644576, 0.3180778, 0.50333184, 1)
 position = Vector2(265.17142, 121.50012)
 scale = Vector2(1.0000001, 1)
 shape = SubResource("RectangleShape2D_mn5rd")
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=863579222]
-offset_right = 40.0
-offset_bottom = 40.0
