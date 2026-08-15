@@ -10,6 +10,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mn5rd"]
 size = Vector2(407.65726, 53)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_mn5rd"]
+radius = 48.8467
+
 [sub_resource type="Animation" id="Animation_f6tb2"]
 length = 0.001
 tracks/0/type = "value"
@@ -46,9 +49,6 @@ _data = {
 &"RESET": SubResource("Animation_f6tb2"),
 &"floating": SubResource("Animation_o6yob")
 }
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_mn5rd"]
-radius = 48.8467
 
 [node name="minigame_1" type="Node2D" unique_id=207607241]
 script = ExtResource("1_0uv5o")
@@ -114,7 +114,7 @@ scale = Vector2(1.0000001, 1)
 shape = SubResource("RectangleShape2D_mn5rd")
 
 [node name="Player" parent="." unique_id=1575242632 instance=ExtResource("2_11mgy")]
-position = Vector2(-94, 448)
+position = Vector2(-103, 424)
 
 [node name="burger" type="Node2D" parent="." unique_id=1639529905]
 script = ExtResource("4_ojqsy")
@@ -127,22 +127,23 @@ offset_bottom = 692.0147
 scale = Vector2(0.3156415, 0.2732396)
 texture = ExtResource("3_f6tb2")
 
+[node name="Area2D" type="Area2D" parent="burger/burger" unique_id=523929361]
+position = Vector2(234.44312, 224.03833)
+scale = Vector2(3.1681514, 3.6597915)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="burger/burger/Area2D" unique_id=2027133263]
+position = Vector2(6, -6)
+shape = SubResource("CircleShape2D_mn5rd")
+
 [node name="animation" type="AnimationPlayer" parent="burger" unique_id=801020902]
 libraries/ = SubResource("AnimationLibrary_5txvl")
 autoplay = &"floating"
 
-[node name="Area2D" type="Area2D" parent="burger" unique_id=523929361]
-position = Vector2(772, 368.21616)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="burger/Area2D" unique_id=2027133263]
-position = Vector2(6, -6)
-shape = SubResource("CircleShape2D_mn5rd")
-
-[node name="burger2" type="Node2D" parent="." unique_id=1891590007]
-position = Vector2(-700, -109)
+[node name="burger2" type="Node2D" parent="." unique_id=13077127]
+position = Vector2(-653, -108)
 script = ExtResource("4_ojqsy")
 
-[node name="burger" type="TextureRect" parent="burger2" unique_id=485779238]
+[node name="burger" type="TextureRect" parent="burger2" unique_id=2101197903]
 offset_left = 698.0
 offset_top = 307.0
 offset_right = 1217.0
@@ -150,42 +151,16 @@ offset_bottom = 692.0147
 scale = Vector2(0.3156415, 0.2732396)
 texture = ExtResource("3_f6tb2")
 
-[node name="animation" type="AnimationPlayer" parent="burger2" unique_id=699062432]
-libraries/ = SubResource("AnimationLibrary_5txvl")
-autoplay = &"floating"
+[node name="Area2D" type="Area2D" parent="burger2/burger" unique_id=1701804858]
+position = Vector2(234.44312, 224.03833)
+scale = Vector2(3.1681514, 3.6597915)
 
-[node name="Area2D" type="Area2D" parent="burger2" unique_id=1392151254]
-position = Vector2(772, 368.21616)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="burger2/Area2D" unique_id=2116677349]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="burger2/burger/Area2D" unique_id=532393233]
 position = Vector2(6, -6)
 shape = SubResource("CircleShape2D_mn5rd")
 
-[node name="burger3" type="Node2D" parent="." unique_id=396878942]
-position = Vector2(287, 193)
-script = ExtResource("4_ojqsy")
-
-[node name="burger" type="TextureRect" parent="burger3" unique_id=465016130]
-offset_left = 698.0
-offset_top = 307.0
-offset_right = 1217.0
-offset_bottom = 692.0147
-scale = Vector2(0.3156415, 0.2732396)
-texture = ExtResource("3_f6tb2")
-
-[node name="animation" type="AnimationPlayer" parent="burger3" unique_id=59302946]
+[node name="animation" type="AnimationPlayer" parent="burger2" unique_id=1916479668]
 libraries/ = SubResource("AnimationLibrary_5txvl")
 autoplay = &"floating"
-
-[node name="Area2D" type="Area2D" parent="burger3" unique_id=332818228]
-position = Vector2(772, 368.21616)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="burger3/Area2D" unique_id=1014705487]
-position = Vector2(6, -6)
-shape = SubResource("CircleShape2D_mn5rd")
 
 [node name="Themedtimer" parent="." unique_id=279927192 instance=ExtResource("6_jmcek")]
-
-[connection signal="burger_collected" from="burger" to="." method="_on_burger_burger_collected"]
-[connection signal="burger_collected" from="burger2" to="." method="_on_burger_2_burger_collected"]
-[connection signal="burger_collected" from="burger3" to="." method="_on_burger_3_burger_collected"]
