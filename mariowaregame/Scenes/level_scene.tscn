@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ceo103scchsmm" path="res://Scenes/timer_screen.gd" id="1_cn3xy"]
 [ext_resource type="Texture2D" uid="uid://bmm6swdsha01x" path="res://burgerhp(1).png" id="2_c7xwe"]
 
-[node name="Node2D" type="Node2D" unique_id=2010517788]
+[node name="timer_screen" type="Node2D" unique_id=2010517788]
 script = ExtResource("1_cn3xy")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1090169723]

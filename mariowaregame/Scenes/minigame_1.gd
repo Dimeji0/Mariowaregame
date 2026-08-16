@@ -27,19 +27,5 @@ func _process(delta: float) -> void:
 	
 
 
-func _on_burger_burger_collected() -> void:
+func burger_collect()-> void:
 	burger_collected = burger_collected +1
-	return
- # Replace with function body.
-
-
-func _on_burger_2_burger_collected() -> void:
-	burger_collected = burger_collected +1
-	return
-	 # Replace with function body.
-
-
-func _on_burger_3_burger_collected() -> void:
-	burger_collected = burger_collected +1
-	return
-	# Replace with function body.

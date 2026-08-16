@@ -186,6 +186,6 @@ shape = SubResource("CircleShape2D_mn5rd")
 
 [node name="Themedtimer" parent="." unique_id=279927192 instance=ExtResource("6_jmcek")]
 
-[connection signal="burger_collected" from="burger" to="." method="_on_burger_burger_collected"]
-[connection signal="burger_collected" from="burger2" to="." method="_on_burger_2_burger_collected"]
-[connection signal="burger_collected" from="burger3" to="." method="_on_burger_3_burger_collected"]
+[connection signal="burger_collected" from="burger" to="." method="burger_collect"]
+[connection signal="burger_collected" from="burger2" to="." method="burger_collect"]
+[connection signal="burger_collected" from="burger3" to="." method="burger_collect"]

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dahv6g4ahnylq"]
+
+[ext_resource type="Texture2D" uid="uid://0qgqr21ewkb0" path="res://meaty background.png" id="1_1hha7"]
+
+[node name="Winner screen" type="Node2D" unique_id=82147815]
+
+[node name="scrolling background" type="Parallax2D" parent="." unique_id=680891595]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="background" type="TextureRect" parent="scrolling background" unique_id=480986432]
+offset_right = 1600.0
+offset_bottom = 900.0
+texture = ExtResource("1_1hha7")
